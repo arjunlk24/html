@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        font-family: bahnschrift condensed;
+    }
+    nav{
+        
+       
+        width: 100% ;
+        /* position:fixed ;
+        top:10px; */
+        padding:10px 0px;
+        background-color:black ;
+        font-family: bahnschrift condensed;
+        
+        border-bottom: 3px red solid ;
+        text-decoration: none;
+        
+    }
+    nav ul{
+        position: relative;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        text-decoration: none;
+    }
+    nav ul li{
+        position: relative;
+    padding: 0px 90px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    nav ul li:hover{
+position: relative;
+        padding: 0px 90px;
+        text-decoration: none;
+        /* color: white; */
+        transform: translateY(-5px);
+        transition: 0.5s;
+    }
+    nav ul li a{
+        position:sticky;
+        text-decoration: none;
+        padding: 0%;
+        color: white;
+        transition: 0.5s;
+    }
+    nav ul li a:hover{
+        position: sticky;
+        text-decoration: none;
+        color: rgb(249, 25, 25);
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    #fit{
+     color: red;
+
+    }
+    img#n{
+     
+      width: 500px;
+      height: 550px;
+        position: absolute;
+        margin-left: 280px;
+        margin-top: 100px;
+        transition: 0.5s;
+        
+         }
+     img#n:hover{
+      
+        position: absolute;
+        margin-left: 280px;
+        margin-top: 100px;
+        transform: translateY(-15px);
+        transition: .5s;
+     }
+  a p#reg{
+    color: rgb(244, 82, 82);
+    position: absolute;
+    margin-left: 880px;
+    margin-top: 100px;
+    font-size: 100px;
+    transition: 1s;
+    
+   }
+  a p#reg:hover{
+    color: rgb(244, 82, 82);
+    position: absolute;
+    margin-left: 880px;
+    margin-top: 100px;
+    font-size: 100px;
+    text-shadow: 0px 0px 20px red;
+    transition: 0.3s;
+    
+   }
+   hr{
+    border: 1px solid red;
+  background:red;
+  box-shadow: 0px 0px 10px red;
+  position:absolute;
+  transform: rotate(180deg);
+  width: 3px;
+  left: 790px;
+  bottom: 43px;
+  top:192px;
+  
+      
+   }
+   p#now{
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-left: 1075px;
+    margin-top: 180px;
+    font-size: 100px;
+    transition: 0.5s;
+    text-shadow: 0px 0px 20px red;
+    z-index: 1;
+   }
+   p#fitness{
+    font-size: 25px;
+    color: rgb(247, 15, 15);
+    padding:0%;
+    text-shadow: 0px 0px 10px rgb(249, 69, 69);
+    cursor: pointer;
+   }
+   p#club{
+    font-size: 25px;
+    color: rgb(247, 15, 15);
+    padding:0%;
+    text-shadow: 0px 0px 10px rgb(249, 69, 69);
+    cursor: pointer;
+
+   }
+   img#inta{
+    position: absolute;
+    margin-left: 1400px;
+    margin-bottom: 80px;
+    height: 30px;
+    z-index: 1;
+   }
+   img#meta{
+    position: absolute;
+    margin-left: 1440px;
+    height: 30px;
+    padding: 0%;
+    z-index: 1;
+
+  
+   }
+   p#info{
+    border: 2px solid rgb(237, 42, 42);
+    background-color: rgba(144, 142, 142, 0.537);
+    color: white;
+    z-index: 1;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 400px;
+    width: 1200px;
+    
+    margin-left: 140px;
+    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+    }
+    div#infor{
+        position: absolute;
+         margin-top: 500px;
+         margin-left:200px;
+         border: 0px solid rgb(121, 120, 120) ;
+         background-color: rgba(193, 186, 186, 0.46);
+         border-radius: 20px;
+         width: 450px;
+         padding: 20px;
+        
+        
+    }
+    img#redhulk{
+        margin-left:950px ;
+        margin-top: 500px;
+        height: 300px;
+        transition: 0.5s;
+    }
+    img#redhulk:hover{
+        margin-left:950px ;
+        margin-top: 500px;
+        height: 300px;
+        transition: 0.5s;
+        transform: translateY(-15px);
+    }
+    div#events{
+        margin-top:250px;
+        text-align: center;
+        text-shadow: 0px 0px 20px red;
+    }
+    /* nav ul#range1{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+
+    }
+    
+    nav ul li.list1{
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 20px red;
+        padding-right: 170px;
+        padding: 120px;
+        align-items: center;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 40px;
+        border: 0px solid rgba(255, 0, 0, 0.676);
+        height: 100px;
+        width:100px
+         */
+        
+        
+        
+    /* } */
+
+    /* div#list{
+        background-color: red;
+        border: 0px solid red;
+        padding:50px;
+        text-align: center;
+        width: 100px;
+        height:50px;
+
+    } */  
+    nav#godmode{
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    margin-left: 150px;
+    text-align: center;
+    text-align: justify;
+    margin-right:20px ;
+
+  }
+    .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  /* border-right: 2px solid #f40404; */
+  perspective: 900px; 
+    }
+    .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: bolder;
+  text-shadow: 0px 0px 20px red;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.flip-card-back {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  transform: rotateY(180deg);
+}
+  
+</style>
+<body style="background-color: black;">
+   <a href="https://www.instagram.com/arjunmathur666"><img src="../project/images/logo/insta/icons8-instagram-94.png" alt="" id="inta"></a>
+    <a href=""><img src="../project/images/logo/meta/icons8-meta-96.png" alt="" id="meta"></a>
+    <nav>
+   <p id="fitness">FITNESS</p>
+   <p style="color:white; border:1px solid black; padding-left :50px; font-size:25px;" id="club">CLUB</p>
+   
+
+        <ul>
+            <li><a href="">GALLERY</a></li>
+            <li><a href="">NUTRITION</a></li>
+            <li><a href="">TRAINING</a></li>
+            <li><a href="">ABOUT</a></li>
+        </ul>
+    </nav>
+   
+   <a href="../project/form.html"> <p id="reg">REGISTER</p></a>
+    <hr>
+
+    <img src="../project/images/unnamed.jpg" alt="never give up" id="n">
+
+   <p id="now">NOW</p>
+   <!-- <p id="info">
+    
+   
+    <span style="font-size: 30px; margin-left:480px;">ABOUT</span>&nbsp;&nbsp;<u style="color:red;"><span style="color: rgb(246, 60, 60); text-shadow: 0px 0px 5px rgb(255, 0, 0); font-size: 30px;">FITNESS</span></u><u style="color: white;"><span style="text-shadow: 0px 0px 5px red; font-size: 30px;">CLUB</span></u>
+   
+    
+</p> -->
+
+
+
+<div id="infor">
+        <!-- <h1><u style="color:white;"><center> <span style="color:red;">ABOUT</span><span style="color:white;">THE</span> <span style="color:red;">FITNESS</span><span style="color:white;">CLUB</span></center></u></h1>
+        <br> -->
+        <p  style="font-size: 70px; font-weight: bolder;"><span style="color:white; text-shadow: 0px 0px 20px red;">HUSTEL</span><br> MAKE IT <span style="color:rgb(245, 55, 55); text-shadow: 0px 0px 20px rgb(255, 5, 5);">TRUE</span></p><br>
+        <p style="font-size:30px; font-weight: bolder;">WORLD CLASS GYM FOR <span style="color:rgb(245, 55, 55); text-shadow: 0px 0px 20px rgb(230, 28, 28); font-size: larger;">HULKS</span>. <br> PURE IRON MACHINES. <br> <span style="color:rgb(249, 63, 63); text-shadow: 0px 0px 10px red; font-size: 70px;">ASTHETIC</span> ENVIROMENT.
+
+        </p>
+       
+        
+
+    
+        
+</div>
+<img src="../project/images/hulk.jpg" alt="red hulk" id="redhulk">
+
+<br>
+
+<div id="events">
+<span style="color:red; font-weight: bolder; font-size:70px">UPCOMING</span> <span style="color:white; font-weight: bolder; font-size: 70px;">EVENT</span>
+</div><br>
+<!-- <div id="list">
+    <div id="inside">
+        <p style="color:white; font-weight:bolder; font-size:30px;">SPARTAN RANGE</p>
+        <p style="color:white; font-weight:bolder; font-size:30px; text-align: right;">SPARTAN RANGE</p>
+    </div>
+</div> -->
+
+
+<!-- <nav id="range">
+    <ul id="range1">
+        <li class="list1" id="sr"><span>SPARTAN RANGE</span></li>
+        <li class="list1" id="kratos"><span>KRATOS</span></li>
+        <li class="list1" id="boc"><span>BLADE OF CHAOS</span></li>
+        <li class="list1"
+        id="gow"><span>GOD OF WAR</span></li> -->
+        
+
+
+
+
+    <!-- </ul> -->
+    <nav id="godmode">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p>ATREUS</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>ATREUS</h1>
+                <p>BASIC LEVEL</p>
+                <p>CARDIO</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p>SPARTAN</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>SPARTAN RANGE</h1>
+                <p>FOR SPARTANS</p>
+                <p>PUSH CHALLENGE</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p>KRATOS</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>KRATOS</h1>
+                <p>RANGE YOUR BLADES</p>
+                <p>PULL CHALLENGES</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p>GOD OF WAR</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>GOD OF WAR</h1>
+                <p>SHOW YOUR REAL STRENGTH</p>
+                <p>INCLUDE ALL CHALLENGES</p>
+              </div>
+            </div>
+          </div>
+          </nav>
+
+
+
+
+
+</nav>
+</body>
+</html>
